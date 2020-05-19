@@ -57,13 +57,14 @@ const Cart: React.FC = () => {
   }, [products]);
 
   const totalItensInCart = useMemo(() => {
+    // TODO RETURN THE SUM OF THE QUANTITY OF THE PRODUCTS IN THE CART
     const total = products.reduce((acc, product) => {
       const productsQuantity = product.quantity;
 
-      return acc + productsQuantity;
-    }, 0);
+      
+    });
 
-    return total;
+    return 0;
   }, [products]);
 
   return (
